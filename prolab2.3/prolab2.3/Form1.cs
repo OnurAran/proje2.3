@@ -14,7 +14,8 @@ namespace prolab2._3
     public partial class Form1 : Form
     {
         SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-T43E7P1;Initial Catalog=prolab;Integrated Security=True");
-        
+
+        public int musteriNo;
         public Form1()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace prolab2._3
             string password = textBox2.Text;
 
             connection.Open();
-            SqlCommand komut = new SqlCommand("Select * from TBLUSER where id=@V1 AND sifre =@V2", connection);
+            SqlCommand komut = new SqlCommand("Select * from TBLCONSUMER where CONSUMERNUMBER=@V1 AND SIFRE=@V2", connection);
             komut.Parameters.AddWithValue("@V1", textBox1.Text);
             komut.Parameters.AddWithValue("@V2", textBox2.Text);
             string kullanici = textBox1.Text;
@@ -36,6 +37,9 @@ namespace prolab2._3
 
             if (dr.Read())
             {
+                musteriNo = Convert.ToInt32(textBox1.Text);
+
+
                 MessageBox.Show("Giris basarili..", "Bilgilendirme");
                 musteriArayuzu musteriArayuzu = new musteriArayuzu();
                 this.Hide();
@@ -55,7 +59,7 @@ namespace prolab2._3
             string password = textBox2.Text;
 
             connection.Open();
-            SqlCommand komut = new SqlCommand("Select * from TBLUSER where id=@V1 AND sifre =@V2", connection);
+            SqlCommand komut = new SqlCommand("Select * from TBLREPRESENTATIVE where TEMSILCINO=@V1 AND SIFRE=@V2", connection);
             komut.Parameters.AddWithValue("@V1", textBox1.Text);
             komut.Parameters.AddWithValue("@V2", textBox2.Text);
             string kullanici = textBox1.Text;
@@ -81,7 +85,7 @@ namespace prolab2._3
             string password = textBox2.Text;
 
             connection.Open();
-            SqlCommand komut = new SqlCommand("Select * from TBLUSER where id=@V1 AND sifre =@V2", connection);
+            SqlCommand komut = new SqlCommand("Select * from TBLMANAGER where YONETICINO=@V1 AND SIFRE=@V2", connection);
             komut.Parameters.AddWithValue("@V1", textBox1.Text);
             komut.Parameters.AddWithValue("@V2", textBox2.Text);
             string kullanici = textBox1.Text;

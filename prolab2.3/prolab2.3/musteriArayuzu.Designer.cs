@@ -60,6 +60,7 @@ namespace prolab2._3
             this.paraCekmeButton.TabIndex = 5;
             this.paraCekmeButton.Text = "Para Çekme";
             this.paraCekmeButton.UseVisualStyleBackColor = true;
+            this.paraCekmeButton.Click += new System.EventHandler(this.paraCekmeButton_Click);
             // 
             // paraYatirmaButton
             // 

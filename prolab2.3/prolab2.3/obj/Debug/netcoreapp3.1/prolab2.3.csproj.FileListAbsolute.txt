@@ -24,3 +24,4 @@ C:\Users\Onur Aran\Documents\GitHub\prolab2.3\prolab2.3\prolab2.3\bin\Debug\netc
 C:\Users\Onur Aran\Documents\GitHub\prolab2.3\prolab2.3\prolab2.3\obj\Debug\netcoreapp3.1\prolab2._3.mudurArayuzu.resources
 C:\Users\Onur Aran\Documents\GitHub\prolab2.3\prolab2.3\prolab2.3\obj\Debug\netcoreapp3.1\prolab2._3.temsilciArayuzu.resources
 C:\Users\Onur Aran\Documents\GitHub\prolab2.3\prolab2.3\prolab2.3\obj\Debug\netcoreapp3.1\prolab2._3.Properties.Resources.resources
+C:\Users\Onur Aran\Documents\GitHub\prolab2.3\prolab2.3\prolab2.3\obj\Debug\netcoreapp3.1\prolab2._3.paraCekmeMusteri.resources

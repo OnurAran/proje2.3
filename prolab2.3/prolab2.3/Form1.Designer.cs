@@ -98,9 +98,9 @@ namespace prolab2._3
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(640, 187);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(18, 15);
+            this.label2.Size = new System.Drawing.Size(58, 15);
             this.label2.TabIndex = 7;
-            this.label2.Text = "ID";
+            this.label2.Text = "NUMARA";
             // 
             // label3
             // 
@@ -109,7 +109,7 @@ namespace prolab2._3
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 15);
             this.label3.TabIndex = 8;
-            this.label3.Text = "SIFRE";
+            this.label3.Text = "ŞİFRE";
             // 
             // Form1
             // 
