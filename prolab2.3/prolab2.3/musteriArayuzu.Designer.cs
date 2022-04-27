@@ -45,9 +45,10 @@ namespace prolab2._3
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(640, 60);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(412, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 15);
+            this.label1.Size = new System.Drawing.Size(319, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "Lutfen yapmak istediginiz islemi seciniz!";
             // 
@@ -81,6 +82,7 @@ namespace prolab2._3
             this.hesapAcmaButton.TabIndex = 7;
             this.hesapAcmaButton.Text = "Hesap Açma";
             this.hesapAcmaButton.UseVisualStyleBackColor = true;
+            this.hesapAcmaButton.Click += new System.EventHandler(this.hesapAcmaButton_Click);
             // 
             // hesapSilmeButton
             // 
@@ -91,6 +93,7 @@ namespace prolab2._3
             this.hesapSilmeButton.TabIndex = 8;
             this.hesapSilmeButton.Text = "Hesap Silme";
             this.hesapSilmeButton.UseVisualStyleBackColor = true;
+            this.hesapSilmeButton.Click += new System.EventHandler(this.hesapSilmeButton_Click);
             // 
             // transferButton
             // 
@@ -101,6 +104,7 @@ namespace prolab2._3
             this.transferButton.TabIndex = 9;
             this.transferButton.Text = "Para Transferi";
             this.transferButton.UseVisualStyleBackColor = true;
+            this.transferButton.Click += new System.EventHandler(this.transferButton_Click);
             // 
             // bilgiGuncellemeButton
             // 
@@ -111,6 +115,7 @@ namespace prolab2._3
             this.bilgiGuncellemeButton.TabIndex = 10;
             this.bilgiGuncellemeButton.Text = "Bilgileri Güncelleme";
             this.bilgiGuncellemeButton.UseVisualStyleBackColor = true;
+            this.bilgiGuncellemeButton.Click += new System.EventHandler(this.bilgiGuncellemeButton_Click);
             // 
             // krediBorcuOdemeButton
             // 

@@ -25,5 +25,33 @@ namespace prolab2._3
             this.Hide();
             paraCekmeMusteri.Show();
         }
+
+        private void hesapAcmaButton_Click(object sender, EventArgs e)
+        {
+            hesapAcmaMusteri hesapAcmaMusteri = new hesapAcmaMusteri();
+            this.Hide();
+            hesapAcmaMusteri.Show();
+        }
+
+        private void hesapSilmeButton_Click(object sender, EventArgs e)
+        {
+            hesapAcmaMusteri hesapAcmaMusteri = new hesapAcmaMusteri();
+            this.Hide();
+            hesapAcmaMusteri.Show();
+        }
+
+        private void bilgiGuncellemeButton_Click(object sender, EventArgs e)
+        {
+            hesapAcmaMusteri hesapAcmaMusteri = new hesapAcmaMusteri();
+            this.Hide();
+            hesapAcmaMusteri.Show();
+        }
+
+        private void transferButton_Click(object sender, EventArgs e)
+        {
+            paraTransfer paraTransfer = new paraTransfer();
+            this.Hide();
+            paraTransfer.Show();
+        }
     }
 }

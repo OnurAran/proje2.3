@@ -37,6 +37,11 @@ namespace prolab2._3
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.labelDolar = new System.Windows.Forms.Label();
+            this.labelEuro = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -111,11 +116,64 @@ namespace prolab2._3
             this.label3.TabIndex = 8;
             this.label3.Text = "ŞİFRE";
             // 
+            // labelTitle
+            // 
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelTitle.Location = new System.Drawing.Point(62, 23);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(74, 26);
+            this.labelTitle.TabIndex = 9;
+            this.labelTitle.Text = "label4";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(62, 93);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 21);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Dolar: ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(62, 146);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 21);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Euro:";
+            // 
+            // labelDolar
+            // 
+            this.labelDolar.AutoSize = true;
+            this.labelDolar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelDolar.Location = new System.Drawing.Point(207, 93);
+            this.labelDolar.Name = "labelDolar";
+            this.labelDolar.Size = new System.Drawing.Size(0, 21);
+            this.labelDolar.TabIndex = 12;
+            // 
+            // labelEuro
+            // 
+            this.labelEuro.AutoSize = true;
+            this.labelEuro.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelEuro.Location = new System.Drawing.Point(207, 146);
+            this.labelEuro.Name = "labelEuro";
+            this.labelEuro.Size = new System.Drawing.Size(0, 21);
+            this.labelEuro.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.labelEuro);
+            this.Controls.Add(this.labelDolar);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
@@ -141,6 +199,11 @@ namespace prolab2._3
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelDolar;
+        private System.Windows.Forms.Label labelEuro;
     }
 }
 

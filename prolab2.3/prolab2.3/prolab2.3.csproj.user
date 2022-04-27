@@ -4,6 +4,9 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="hesapAcmaMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="mudurArayuzu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -11,6 +14,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="paraCekmeMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="paraTransfer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="temsilciArayuzu.cs">

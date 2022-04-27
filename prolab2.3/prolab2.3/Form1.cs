@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace prolab2._3
 {
@@ -15,13 +16,41 @@ namespace prolab2._3
     {
         SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-T43E7P1;Initial Catalog=prolab;Integrated Security=True");
 
-        public int musteriNo;
+        public static int musteriNo;
         public Form1()
         {
             InitializeComponent();
             textBox2.PasswordChar = '•';
 
+            labelTitle.Text = "Güncel Döviz Kurları";
+
+            DovizGoster();
+
+
+
         }
+
+        public void DovizGoster()
+        {
+            try
+            {
+                XmlDocument xmlVerisi = new XmlDocument();
+                xmlVerisi.Load("http://www.tcmb.gov.tr/kurlar/today.xml");
+
+                decimal dolar = Convert.ToDecimal(xmlVerisi.SelectSingleNode(string.Format("Tarih_Date/Currency[@Kod='{0}']/ForexSelling", "USD")).InnerText.Replace('.', ','));
+                decimal euro = Convert.ToDecimal(xmlVerisi.SelectSingleNode(string.Format("Tarih_Date/Currency[@Kod='{0}']/ForexSelling", "EUR")).InnerText.Replace('.', ','));
+                decimal sterlin = Convert.ToDecimal(xmlVerisi.SelectSingleNode(string.Format("Tarih_Date/Currency[@Kod='{0}']/ForexSelling", "GBP")).InnerText.Replace('.', ','));
+
+                labelDolar.Text = dolar.ToString();
+                labelEuro.Text = euro.ToString();
+            }
+            catch (XmlException xml)
+            {
+                MessageBox.Show(xml.ToString());
+            }
+
+        }
+
 
         private void musteriButton_Click(object sender, EventArgs e)
         {
@@ -40,7 +69,7 @@ namespace prolab2._3
                 musteriNo = Convert.ToInt32(textBox1.Text);
 
 
-                MessageBox.Show("Giris basarili..", "Bilgilendirme");
+                MessageBox.Show("Giris basarili.."+musteriNo, "Bilgilendirme");
                 musteriArayuzu musteriArayuzu = new musteriArayuzu();
                 this.Hide();
                 musteriArayuzu.Show();

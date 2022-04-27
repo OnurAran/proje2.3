@@ -34,6 +34,7 @@ namespace prolab2._3
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.paraCekButton = new System.Windows.Forms.Button();
+            this.paraYatirButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,13 +59,13 @@ namespace prolab2._3
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(585, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 15);
+            this.label1.Size = new System.Drawing.Size(73, 15);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Çekmek istediğiniz tutarı girin.";
+            this.label1.Text = "Tutar Giriniz.";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(585, 193);
+            this.button1.Location = new System.Drawing.Point(585, 213);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 30);
             this.button1.TabIndex = 3;
@@ -82,11 +83,21 @@ namespace prolab2._3
             this.paraCekButton.UseVisualStyleBackColor = true;
             this.paraCekButton.Click += new System.EventHandler(this.paraCekButton_Click);
             // 
+            // paraYatirButton
+            // 
+            this.paraYatirButton.Location = new System.Drawing.Point(585, 144);
+            this.paraYatirButton.Name = "paraYatirButton";
+            this.paraYatirButton.Size = new System.Drawing.Size(167, 30);
+            this.paraYatirButton.TabIndex = 5;
+            this.paraYatirButton.Text = "Para Yatır";
+            this.paraYatirButton.UseVisualStyleBackColor = true;
+            // 
             // paraCekmeMusteri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.paraYatirButton);
             this.Controls.Add(this.paraCekButton);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -107,5 +118,6 @@ namespace prolab2._3
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button paraCekButton;
+        private System.Windows.Forms.Button paraYatirButton;
     }
 }

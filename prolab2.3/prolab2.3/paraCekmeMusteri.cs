@@ -12,7 +12,7 @@ namespace prolab2._3
     public partial class paraCekmeMusteri : Form
     {
         SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-T43E7P1;Initial Catalog=prolab;Integrated Security=True");
-        Form1 newForm1 = new Form1();
+
         public paraCekmeMusteri()
         {
             InitializeComponent();
@@ -34,15 +34,15 @@ namespace prolab2._3
             int yeniBakiye;
             int bakiye;
 
-            connection.Open();
+            //connection.Open();
 
-            //MessageBox.Show((dt.GetConsumerMoney(newForm1.musteriNo)).ToString());
+            MessageBox.Show((Form1.musteriNo).ToString());
 
-            bakiye = Convert.ToInt32(dt.GetMoneyWhereNumber(newForm1.musteriNo));
+            bakiye = Convert.ToInt32(dt.GetConsumerMoney(Form1.musteriNo));
 
             yeniBakiye = bakiye - Convert.ToInt32(textBox1.Text);
 
-            dt.UpdateQuery(yeniBakiye,newForm1.musteriNo);
+            dt.UpdateQuery(yeniBakiye, Form1.musteriNo);
                 
         }
     }
