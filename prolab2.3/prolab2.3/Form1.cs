@@ -12,9 +12,14 @@ using System.Xml;
 
 namespace prolab2._3
 {
+    
     public partial class Form1 : Form
     {
         SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-T43E7P1;Initial Catalog=prolab;Integrated Security=True");
+
+        public static int DolarKuru;
+        public static int EuroKuru;
+
 
         public static int musteriNo;
         public Form1()
@@ -43,6 +48,8 @@ namespace prolab2._3
 
                 labelDolar.Text = dolar.ToString();
                 labelEuro.Text = euro.ToString();
+                DolarKuru = Convert.ToInt32(dolar);
+                EuroKuru = Convert.ToInt32(euro);
             }
             catch (XmlException xml)
             {

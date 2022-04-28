@@ -42,6 +42,8 @@ namespace prolab2._3
             this.label5 = new System.Windows.Forms.Label();
             this.labelDolar = new System.Windows.Forms.Label();
             this.labelEuro = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.labelTarih = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -164,11 +166,33 @@ namespace prolab2._3
             this.labelEuro.Size = new System.Drawing.Size(0, 21);
             this.labelEuro.TabIndex = 13;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(445, 23);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(76, 26);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Tarih:";
+            // 
+            // labelTarih
+            // 
+            this.labelTarih.AutoSize = true;
+            this.labelTarih.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelTarih.Location = new System.Drawing.Point(527, 23);
+            this.labelTarih.Name = "labelTarih";
+            this.labelTarih.Size = new System.Drawing.Size(120, 27);
+            this.labelTarih.TabIndex = 15;
+            this.labelTarih.Text = "28.04.2022";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.labelTarih);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.labelEuro);
             this.Controls.Add(this.labelDolar);
             this.Controls.Add(this.label5);
@@ -204,6 +228,8 @@ namespace prolab2._3
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label labelDolar;
         private System.Windows.Forms.Label labelEuro;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label labelTarih;
     }
 }
 

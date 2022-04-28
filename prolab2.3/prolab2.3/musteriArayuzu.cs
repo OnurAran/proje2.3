@@ -53,5 +53,19 @@ namespace prolab2._3
             this.Hide();
             paraTransfer.Show();
         }
+
+        private void krediTalepButton_Click(object sender, EventArgs e)
+        {
+            krediArayuzu krediArayuzu = new krediArayuzu();
+            this.Hide();
+            krediArayuzu.Show();
+        }
+
+        private void aylikOzetButton_Click(object sender, EventArgs e)
+        {
+            aylikOzetGoruntuleme aylikOzetGoruntuleme = new aylikOzetGoruntuleme();
+            this.Hide();
+            aylikOzetGoruntuleme.Show();
+        }
     }
 }

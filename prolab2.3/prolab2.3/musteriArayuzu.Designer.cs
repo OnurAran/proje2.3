@@ -50,7 +50,7 @@ namespace prolab2._3
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(319, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Lutfen yapmak istediginiz islemi seciniz!";
+            this.label1.Text = "Lütfen yapmak istediginiz islemi seciniz!";
             // 
             // paraCekmeButton
             // 
@@ -136,6 +136,7 @@ namespace prolab2._3
             this.krediTalepButton.TabIndex = 12;
             this.krediTalepButton.Text = "Kredi Talebi";
             this.krediTalepButton.UseVisualStyleBackColor = true;
+            this.krediTalepButton.Click += new System.EventHandler(this.krediTalepButton_Click);
             // 
             // aylikOzetButton
             // 
@@ -146,6 +147,7 @@ namespace prolab2._3
             this.aylikOzetButton.TabIndex = 13;
             this.aylikOzetButton.Text = "Aylık Özet Görüntüleme";
             this.aylikOzetButton.UseVisualStyleBackColor = true;
+            this.aylikOzetButton.Click += new System.EventHandler(this.aylikOzetButton_Click);
             // 
             // musteriArayuzu
             // 

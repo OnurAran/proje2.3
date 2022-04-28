@@ -27,3 +27,5 @@ C:\Users\Onur Aran\Documents\GitHub\prolab2.3\prolab2.3\prolab2.3\obj\Debug\netc
 C:\Users\Onur Aran\Documents\GitHub\prolab2.3\prolab2.3\prolab2.3\obj\Debug\netcoreapp3.1\prolab2._3.paraCekmeMusteri.resources
 C:\Users\Onur Aran\Documents\GitHub\prolab2.3\prolab2.3\prolab2.3\obj\Debug\netcoreapp3.1\prolab2._3.hesapAcmaMusteri.resources
 C:\Users\Onur Aran\Documents\GitHub\prolab2.3\prolab2.3\prolab2.3\obj\Debug\netcoreapp3.1\prolab2._3.paraTransfer.resources
+C:\Users\Onur Aran\Documents\GitHub\prolab2.3\prolab2.3\prolab2.3\obj\Debug\netcoreapp3.1\prolab2._3.krediArayuzu.resources
+C:\Users\Onur Aran\Documents\GitHub\prolab2.3\prolab2.3\prolab2.3\obj\Debug\netcoreapp3.1\prolab2._3.aylikOzetGoruntuleme.resources

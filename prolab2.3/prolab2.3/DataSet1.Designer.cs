@@ -30,6 +30,8 @@ namespace prolab2._3 {
         
         private TBLCONSUMERDataTable tableTBLCONSUMER;
         
+        private TBLCONSUMERCREDIDataTable tableTBLCONSUMERCREDI;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -66,6 +68,9 @@ namespace prolab2._3 {
                 }
                 if ((ds.Tables["TBLCONSUMER"] != null)) {
                     base.Tables.Add(new TBLCONSUMERDataTable(ds.Tables["TBLCONSUMER"]));
+                }
+                if ((ds.Tables["TBLCONSUMERCREDI"] != null)) {
+                    base.Tables.Add(new TBLCONSUMERCREDIDataTable(ds.Tables["TBLCONSUMERCREDI"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -112,6 +117,16 @@ namespace prolab2._3 {
         public TBLCONSUMERDataTable TBLCONSUMER {
             get {
                 return this.tableTBLCONSUMER;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public TBLCONSUMERCREDIDataTable TBLCONSUMERCREDI {
+            get {
+                return this.tableTBLCONSUMERCREDI;
             }
         }
         
@@ -191,6 +206,9 @@ namespace prolab2._3 {
                 if ((ds.Tables["TBLCONSUMER"] != null)) {
                     base.Tables.Add(new TBLCONSUMERDataTable(ds.Tables["TBLCONSUMER"]));
                 }
+                if ((ds.Tables["TBLCONSUMERCREDI"] != null)) {
+                    base.Tables.Add(new TBLCONSUMERCREDIDataTable(ds.Tables["TBLCONSUMERCREDI"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -242,6 +260,12 @@ namespace prolab2._3 {
                     this.tableTBLCONSUMER.InitVars();
                 }
             }
+            this.tableTBLCONSUMERCREDI = ((TBLCONSUMERCREDIDataTable)(base.Tables["TBLCONSUMERCREDI"]));
+            if ((initTable == true)) {
+                if ((this.tableTBLCONSUMERCREDI != null)) {
+                    this.tableTBLCONSUMERCREDI.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -258,6 +282,8 @@ namespace prolab2._3 {
             base.Tables.Add(this.tableDELETECONSUMER);
             this.tableTBLCONSUMER = new TBLCONSUMERDataTable();
             base.Tables.Add(this.tableTBLCONSUMER);
+            this.tableTBLCONSUMERCREDI = new TBLCONSUMERCREDIDataTable();
+            base.Tables.Add(this.tableTBLCONSUMERCREDI);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -275,6 +301,12 @@ namespace prolab2._3 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private bool ShouldSerializeTBLCONSUMER() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializeTBLCONSUMERCREDI() {
             return false;
         }
         
@@ -341,6 +373,9 @@ namespace prolab2._3 {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void TBLCONSUMERRowChangeEventHandler(object sender, TBLCONSUMERRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void TBLCONSUMERCREDIRowChangeEventHandler(object sender, TBLCONSUMERCREDIRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -1306,6 +1341,344 @@ namespace prolab2._3 {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class TBLCONSUMERCREDIDataTable : global::System.Data.TypedTableBase<TBLCONSUMERCREDIRow> {
+            
+            private global::System.Data.DataColumn columnCONSUMERNUMBER;
+            
+            private global::System.Data.DataColumn columnVADE;
+            
+            private global::System.Data.DataColumn columnBORC;
+            
+            private global::System.Data.DataColumn columnVADEKALAN;
+            
+            private global::System.Data.DataColumn columnBORCKALAN;
+            
+            private global::System.Data.DataColumn columnAYLIK_BORC;
+            
+            private global::System.Data.DataColumn columnAYLIK_FAIZ;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public TBLCONSUMERCREDIDataTable() {
+                this.TableName = "TBLCONSUMERCREDI";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal TBLCONSUMERCREDIDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected TBLCONSUMERCREDIDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CONSUMERNUMBERColumn {
+                get {
+                    return this.columnCONSUMERNUMBER;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn VADEColumn {
+                get {
+                    return this.columnVADE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn BORCColumn {
+                get {
+                    return this.columnBORC;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn VADEKALANColumn {
+                get {
+                    return this.columnVADEKALAN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn BORCKALANColumn {
+                get {
+                    return this.columnBORCKALAN;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn AYLIK_BORCColumn {
+                get {
+                    return this.columnAYLIK_BORC;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn AYLIK_FAIZColumn {
+                get {
+                    return this.columnAYLIK_FAIZ;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public TBLCONSUMERCREDIRow this[int index] {
+                get {
+                    return ((TBLCONSUMERCREDIRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event TBLCONSUMERCREDIRowChangeEventHandler TBLCONSUMERCREDIRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event TBLCONSUMERCREDIRowChangeEventHandler TBLCONSUMERCREDIRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event TBLCONSUMERCREDIRowChangeEventHandler TBLCONSUMERCREDIRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event TBLCONSUMERCREDIRowChangeEventHandler TBLCONSUMERCREDIRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddTBLCONSUMERCREDIRow(TBLCONSUMERCREDIRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public TBLCONSUMERCREDIRow AddTBLCONSUMERCREDIRow(string CONSUMERNUMBER, string VADE, string BORC, string VADEKALAN, string BORCKALAN, string AYLIK_BORC, string AYLIK_FAIZ) {
+                TBLCONSUMERCREDIRow rowTBLCONSUMERCREDIRow = ((TBLCONSUMERCREDIRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        CONSUMERNUMBER,
+                        VADE,
+                        BORC,
+                        VADEKALAN,
+                        BORCKALAN,
+                        AYLIK_BORC,
+                        AYLIK_FAIZ};
+                rowTBLCONSUMERCREDIRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowTBLCONSUMERCREDIRow);
+                return rowTBLCONSUMERCREDIRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                TBLCONSUMERCREDIDataTable cln = ((TBLCONSUMERCREDIDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new TBLCONSUMERCREDIDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnCONSUMERNUMBER = base.Columns["CONSUMERNUMBER"];
+                this.columnVADE = base.Columns["VADE"];
+                this.columnBORC = base.Columns["BORC"];
+                this.columnVADEKALAN = base.Columns["VADEKALAN"];
+                this.columnBORCKALAN = base.Columns["BORCKALAN"];
+                this.columnAYLIK_BORC = base.Columns["AYLIK_BORC"];
+                this.columnAYLIK_FAIZ = base.Columns["AYLIK_FAIZ"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnCONSUMERNUMBER = new global::System.Data.DataColumn("CONSUMERNUMBER", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCONSUMERNUMBER);
+                this.columnVADE = new global::System.Data.DataColumn("VADE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVADE);
+                this.columnBORC = new global::System.Data.DataColumn("BORC", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBORC);
+                this.columnVADEKALAN = new global::System.Data.DataColumn("VADEKALAN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVADEKALAN);
+                this.columnBORCKALAN = new global::System.Data.DataColumn("BORCKALAN", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBORCKALAN);
+                this.columnAYLIK_BORC = new global::System.Data.DataColumn("AYLIK_BORC", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAYLIK_BORC);
+                this.columnAYLIK_FAIZ = new global::System.Data.DataColumn("AYLIK_FAIZ", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAYLIK_FAIZ);
+                this.columnCONSUMERNUMBER.MaxLength = 2147483647;
+                this.columnVADE.MaxLength = 2147483647;
+                this.columnBORC.MaxLength = 2147483647;
+                this.columnVADEKALAN.MaxLength = 2147483647;
+                this.columnBORCKALAN.MaxLength = 2147483647;
+                this.columnAYLIK_BORC.MaxLength = 2147483647;
+                this.columnAYLIK_FAIZ.MaxLength = 2147483647;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public TBLCONSUMERCREDIRow NewTBLCONSUMERCREDIRow() {
+                return ((TBLCONSUMERCREDIRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new TBLCONSUMERCREDIRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(TBLCONSUMERCREDIRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.TBLCONSUMERCREDIRowChanged != null)) {
+                    this.TBLCONSUMERCREDIRowChanged(this, new TBLCONSUMERCREDIRowChangeEvent(((TBLCONSUMERCREDIRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.TBLCONSUMERCREDIRowChanging != null)) {
+                    this.TBLCONSUMERCREDIRowChanging(this, new TBLCONSUMERCREDIRowChangeEvent(((TBLCONSUMERCREDIRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.TBLCONSUMERCREDIRowDeleted != null)) {
+                    this.TBLCONSUMERCREDIRowDeleted(this, new TBLCONSUMERCREDIRowChangeEvent(((TBLCONSUMERCREDIRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.TBLCONSUMERCREDIRowDeleting != null)) {
+                    this.TBLCONSUMERCREDIRowDeleting(this, new TBLCONSUMERCREDIRowChangeEvent(((TBLCONSUMERCREDIRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemoveTBLCONSUMERCREDIRow(TBLCONSUMERCREDIRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSet1 ds = new DataSet1();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "TBLCONSUMERCREDIDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class TBLCONSUMERMONEYRow : global::System.Data.DataRow {
@@ -1765,6 +2138,217 @@ namespace prolab2._3 {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class TBLCONSUMERCREDIRow : global::System.Data.DataRow {
+            
+            private TBLCONSUMERCREDIDataTable tableTBLCONSUMERCREDI;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal TBLCONSUMERCREDIRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableTBLCONSUMERCREDI = ((TBLCONSUMERCREDIDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string CONSUMERNUMBER {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBLCONSUMERCREDI.CONSUMERNUMBERColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'TBLCONSUMERCREDI\' tablosundaki \'CONSUMERNUMBER\' sütunun değeri DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBLCONSUMERCREDI.CONSUMERNUMBERColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string VADE {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBLCONSUMERCREDI.VADEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'TBLCONSUMERCREDI\' tablosundaki \'VADE\' sütunun değeri DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBLCONSUMERCREDI.VADEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string BORC {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBLCONSUMERCREDI.BORCColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'TBLCONSUMERCREDI\' tablosundaki \'BORC\' sütunun değeri DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBLCONSUMERCREDI.BORCColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string VADEKALAN {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBLCONSUMERCREDI.VADEKALANColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'TBLCONSUMERCREDI\' tablosundaki \'VADEKALAN\' sütunun değeri DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBLCONSUMERCREDI.VADEKALANColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string BORCKALAN {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBLCONSUMERCREDI.BORCKALANColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'TBLCONSUMERCREDI\' tablosundaki \'BORCKALAN\' sütunun değeri DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBLCONSUMERCREDI.BORCKALANColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string AYLIK_BORC {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBLCONSUMERCREDI.AYLIK_BORCColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'TBLCONSUMERCREDI\' tablosundaki \'AYLIK_BORC\' sütunun değeri DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBLCONSUMERCREDI.AYLIK_BORCColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string AYLIK_FAIZ {
+                get {
+                    try {
+                        return ((string)(this[this.tableTBLCONSUMERCREDI.AYLIK_FAIZColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'TBLCONSUMERCREDI\' tablosundaki \'AYLIK_FAIZ\' sütunun değeri DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBLCONSUMERCREDI.AYLIK_FAIZColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCONSUMERNUMBERNull() {
+                return this.IsNull(this.tableTBLCONSUMERCREDI.CONSUMERNUMBERColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCONSUMERNUMBERNull() {
+                this[this.tableTBLCONSUMERCREDI.CONSUMERNUMBERColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsVADENull() {
+                return this.IsNull(this.tableTBLCONSUMERCREDI.VADEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetVADENull() {
+                this[this.tableTBLCONSUMERCREDI.VADEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsBORCNull() {
+                return this.IsNull(this.tableTBLCONSUMERCREDI.BORCColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetBORCNull() {
+                this[this.tableTBLCONSUMERCREDI.BORCColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsVADEKALANNull() {
+                return this.IsNull(this.tableTBLCONSUMERCREDI.VADEKALANColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetVADEKALANNull() {
+                this[this.tableTBLCONSUMERCREDI.VADEKALANColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsBORCKALANNull() {
+                return this.IsNull(this.tableTBLCONSUMERCREDI.BORCKALANColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetBORCKALANNull() {
+                this[this.tableTBLCONSUMERCREDI.BORCKALANColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsAYLIK_BORCNull() {
+                return this.IsNull(this.tableTBLCONSUMERCREDI.AYLIK_BORCColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetAYLIK_BORCNull() {
+                this[this.tableTBLCONSUMERCREDI.AYLIK_BORCColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsAYLIK_FAIZNull() {
+                return this.IsNull(this.tableTBLCONSUMERCREDI.AYLIK_FAIZColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetAYLIK_FAIZNull() {
+                this[this.tableTBLCONSUMERCREDI.AYLIK_FAIZColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -1852,6 +2436,40 @@ namespace prolab2._3 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public TBLCONSUMERRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class TBLCONSUMERCREDIRowChangeEvent : global::System.EventArgs {
+            
+            private TBLCONSUMERCREDIRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public TBLCONSUMERCREDIRowChangeEvent(TBLCONSUMERCREDIRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public TBLCONSUMERCREDIRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3040,6 +3658,284 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
     }
     
     /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class TBLCONSUMERCREDITableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public TBLCONSUMERCREDITableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "TBLCONSUMERCREDI";
+            tableMapping.ColumnMappings.Add("CONSUMERNUMBER", "CONSUMERNUMBER");
+            tableMapping.ColumnMappings.Add("VADE", "VADE");
+            tableMapping.ColumnMappings.Add("BORC", "BORC");
+            tableMapping.ColumnMappings.Add("VADEKALAN", "VADEKALAN");
+            tableMapping.ColumnMappings.Add("BORCKALAN", "BORCKALAN");
+            tableMapping.ColumnMappings.Add("AYLIK_BORC", "AYLIK_BORC");
+            tableMapping.ColumnMappings.Add("AYLIK_FAIZ", "AYLIK_FAIZ");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [TBLCONSUMERCREDI] ([CONSUMERNUMBER], [VADE], [BORC], [VADEKALAN], [B" +
+                "ORCKALAN], [AYLIK_BORC], [AYLIK_FAIZ]) VALUES (@CONSUMERNUMBER, @VADE, @BORC, @V" +
+                "ADEKALAN, @BORCKALAN, @AYLIK_BORC, @AYLIK_FAIZ)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CONSUMERNUMBER", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CONSUMERNUMBER", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VADE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VADE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BORC", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BORC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@VADEKALAN", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "VADEKALAN", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BORCKALAN", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BORCKALAN", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AYLIK_BORC", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AYLIK_BORC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AYLIK_FAIZ", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "AYLIK_FAIZ", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = "Data Source=DESKTOP-T43E7P1;Initial Catalog=prolab;Integrated Security=True";
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT        TBLCONSUMERCREDI.*\r\nFROM            TBLCONSUMERCREDI";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DataSet1.TBLCONSUMERCREDIDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DataSet1.TBLCONSUMERCREDIDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.TBLCONSUMERCREDIDataTable dataTable = new DataSet1.TBLCONSUMERCREDIDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DataSet1.TBLCONSUMERCREDIDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DataSet1 dataSet) {
+            return this.Adapter.Update(dataSet, "TBLCONSUMERCREDI");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string CONSUMERNUMBER, string VADE, string BORC, string VADEKALAN, string BORCKALAN, string AYLIK_BORC, string AYLIK_FAIZ) {
+            if ((CONSUMERNUMBER == null)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(CONSUMERNUMBER));
+            }
+            if ((VADE == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(VADE));
+            }
+            if ((BORC == null)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(BORC));
+            }
+            if ((VADEKALAN == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(VADEKALAN));
+            }
+            if ((BORCKALAN == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(BORCKALAN));
+            }
+            if ((AYLIK_BORC == null)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(AYLIK_BORC));
+            }
+            if ((AYLIK_FAIZ == null)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(AYLIK_FAIZ));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+    }
+    
+    /// <summary>
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3054,6 +3950,8 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
         private TBLCONSUMERMONEYTableAdapter _tBLCONSUMERMONEYTableAdapter;
         
         private TBLCONSUMERTableAdapter _tBLCONSUMERTableAdapter;
+        
+        private TBLCONSUMERCREDITableAdapter _tBLCONSUMERCREDITableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -3100,6 +3998,20 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public TBLCONSUMERCREDITableAdapter TBLCONSUMERCREDITableAdapter {
+            get {
+                return this._tBLCONSUMERCREDITableAdapter;
+            }
+            set {
+                this._tBLCONSUMERCREDITableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -3125,6 +4037,10 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
                             && (this._tBLCONSUMERTableAdapter.Connection != null))) {
                     return this._tBLCONSUMERTableAdapter.Connection;
                 }
+                if (((this._tBLCONSUMERCREDITableAdapter != null) 
+                            && (this._tBLCONSUMERCREDITableAdapter.Connection != null))) {
+                    return this._tBLCONSUMERCREDITableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -3142,6 +4058,9 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
                     count = (count + 1);
                 }
                 if ((this._tBLCONSUMERTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._tBLCONSUMERCREDITableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -3173,6 +4092,15 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._tBLCONSUMERCREDITableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.TBLCONSUMERCREDI.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._tBLCONSUMERCREDITableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -3199,6 +4127,14 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._tBLCONSUMERCREDITableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.TBLCONSUMERCREDI.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._tBLCONSUMERCREDITableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -3209,6 +4145,14 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private int UpdateDeletedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._tBLCONSUMERCREDITableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.TBLCONSUMERCREDI.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._tBLCONSUMERCREDITableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._tBLCONSUMERTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.TBLCONSUMER.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -3274,6 +4218,11 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
                 throw new global::System.ArgumentException("TableAdapterManager tarafından yönetilen tüm TableAdapter\'lar aynı bağlantı dizes" +
                         "ini kullanmalıdır.");
             }
+            if (((this._tBLCONSUMERCREDITableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tBLCONSUMERCREDITableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("TableAdapterManager tarafından yönetilen tüm TableAdapter\'lar aynı bağlantı dizes" +
+                        "ini kullanmalıdır.");
+            }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
                 throw new global::System.ApplicationException("TableAdapterManager bağlantı bilgisi içermiyor. TableAdapterManager TableAdapter " +
@@ -3322,6 +4271,15 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
                     if (this._tBLCONSUMERTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._tBLCONSUMERTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._tBLCONSUMERTableAdapter.Adapter);
+                    }
+                }
+                if ((this._tBLCONSUMERCREDITableAdapter != null)) {
+                    revertConnections.Add(this._tBLCONSUMERCREDITableAdapter, this._tBLCONSUMERCREDITableAdapter.Connection);
+                    this._tBLCONSUMERCREDITableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._tBLCONSUMERCREDITableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._tBLCONSUMERCREDITableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tBLCONSUMERCREDITableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tBLCONSUMERCREDITableAdapter.Adapter);
                     }
                 }
                 // 
@@ -3389,6 +4347,10 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
                 if ((this._tBLCONSUMERTableAdapter != null)) {
                     this._tBLCONSUMERTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tBLCONSUMERTableAdapter]));
                     this._tBLCONSUMERTableAdapter.Transaction = null;
+                }
+                if ((this._tBLCONSUMERCREDITableAdapter != null)) {
+                    this._tBLCONSUMERCREDITableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tBLCONSUMERCREDITableAdapter]));
+                    this._tBLCONSUMERCREDITableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

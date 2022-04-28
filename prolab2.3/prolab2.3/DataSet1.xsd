@@ -85,7 +85,7 @@ FROM            TBLCONSUMER INNER JOIN
               <Mapping SourceColumn="BAKIYE" DataSetColumn="BAKIYE" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteMoney" Modifier="Public" Name="DeleteMoney" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="DeleteMoney">
+              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteMoney" Modifier="Public" Name="DeleteMoney" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteMoney">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM TBLCONSUMERMONEY WHERE CONSUMERNUMBER = @NUMBER</CommandText>
@@ -95,7 +95,7 @@ FROM            TBLCONSUMER INNER JOIN
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQuery" Modifier="Public" Name="DeleteQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteQuery">
+              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQuery" Modifier="Public" Name="DeleteQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="DeleteQuery">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM TBLCONSUMER
@@ -167,7 +167,7 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
               <Mapping SourceColumn="ADRES" DataSetColumn="ADRES" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="prolab.dbo.TBLCONSUMER" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByAdres" GeneratorSourceName="FillByAdres" Modifier="Public" Name="FillByAdres" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByAdres" UserSourceName="FillByAdres">
+              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="prolab.dbo.TBLCONSUMER" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByAdres" GeneratorSourceName="FillByAdres" Modifier="Public" Name="FillByAdres" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillByAdres">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        ADRES
@@ -179,7 +179,7 @@ WHERE        (CONSUMERNUMBER = @NUMBER)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="prolab.dbo.TBLCONSUMER" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByisim" GeneratorSourceName="FillByisim" Modifier="Public" Name="FillByisim" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByisim" UserSourceName="FillByisim">
+              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="prolab.dbo.TBLCONSUMER" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByisim" GeneratorSourceName="FillByisim" Modifier="Public" Name="FillByisim" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillByisim">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        ISIM
@@ -191,7 +191,7 @@ WHERE        (CONSUMERNUMBER = @NUMBER)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="prolab.dbo.TBLCONSUMER" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBySifre" GeneratorSourceName="FillBySifre" Modifier="Public" Name="FillBySifre" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBySifre" UserSourceName="FillBySifre">
+              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="prolab.dbo.TBLCONSUMER" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBySifre" GeneratorSourceName="FillBySifre" Modifier="Public" Name="FillBySifre" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="FillBySifre">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        SIFRE
@@ -203,7 +203,7 @@ WHERE        (CONSUMERNUMBER = @NUMBER)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="prolab.dbo.TBLCONSUMER" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBySoyisim" GeneratorSourceName="FillBySoyisim" Modifier="Public" Name="FillBySoyisim" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBySoyisim" UserSourceName="FillBySoyisim">
+              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="prolab.dbo.TBLCONSUMER" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBySoyisim" GeneratorSourceName="FillBySoyisim" Modifier="Public" Name="FillBySoyisim" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="FillBySoyisim">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        SOYISIM
@@ -215,7 +215,7 @@ WHERE        (CONSUMERNUMBER = @NUMBER)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="prolab.dbo.TBLCONSUMER" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByTelefon" GeneratorSourceName="FillByTelefon" Modifier="Public" Name="FillByTelefon" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByTelefon" UserSourceName="FillByTelefon">
+              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="prolab.dbo.TBLCONSUMER" DbObjectType="Table" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByTelefon" GeneratorSourceName="FillByTelefon" Modifier="Public" Name="FillByTelefon" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="FillByTelefon">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        TELEFON
@@ -227,7 +227,7 @@ WHERE        (CONSUMERNUMBER = @NUMBER)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuery" Modifier="Public" Name="UpdateQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="UpdateQuery">
+              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQuery" Modifier="Public" Name="UpdateQuery" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="UpdateQuery">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE       TBLCONSUMER
@@ -248,6 +248,43 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
               </DbSource>
             </Sources>
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TBLCONSUMERCREDITableAdapter" GeneratorDataComponentClassName="TBLCONSUMERCREDITableAdapter" Name="TBLCONSUMERCREDI" UserDataComponentName="TBLCONSUMERCREDITableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="desktop-t43e7p1.prolab.dbo" DbObjectName="prolab.dbo.TBLCONSUMERCREDI" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [TBLCONSUMERCREDI] ([CONSUMERNUMBER], [VADE], [BORC], [VADEKALAN], [BORCKALAN], [AYLIK_BORC], [AYLIK_FAIZ]) VALUES (@CONSUMERNUMBER, @VADE, @BORC, @VADEKALAN, @BORCKALAN, @AYLIK_BORC, @AYLIK_FAIZ)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CONSUMERNUMBER" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CONSUMERNUMBER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@VADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="VADE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BORC" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BORC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@VADEKALAN" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="VADEKALAN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BORCKALAN" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BORCKALAN" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@AYLIK_BORC" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AYLIK_BORC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@AYLIK_FAIZ" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AYLIK_FAIZ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        TBLCONSUMERCREDI.*
+FROM            TBLCONSUMERCREDI</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CONSUMERNUMBER" DataSetColumn="CONSUMERNUMBER" />
+              <Mapping SourceColumn="VADE" DataSetColumn="VADE" />
+              <Mapping SourceColumn="BORC" DataSetColumn="BORC" />
+              <Mapping SourceColumn="VADEKALAN" DataSetColumn="VADEKALAN" />
+              <Mapping SourceColumn="BORCKALAN" DataSetColumn="BORCKALAN" />
+              <Mapping SourceColumn="AYLIK_BORC" DataSetColumn="AYLIK_BORC" />
+              <Mapping SourceColumn="AYLIK_FAIZ" DataSetColumn="AYLIK_FAIZ" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -256,7 +293,7 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
   <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="TBLCONSUMERMONEY" msprop:Generator_TableClassName="TBLCONSUMERMONEYDataTable" msprop:Generator_TableVarName="tableTBLCONSUMERMONEY" msprop:Generator_TablePropName="TBLCONSUMERMONEY" msprop:Generator_RowDeletingName="TBLCONSUMERMONEYRowDeleting" msprop:Generator_RowChangingName="TBLCONSUMERMONEYRowChanging" msprop:Generator_RowEvHandlerName="TBLCONSUMERMONEYRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLCONSUMERMONEYRowDeleted" msprop:Generator_UserTableName="TBLCONSUMERMONEY" msprop:Generator_RowChangedName="TBLCONSUMERMONEYRowChanged" msprop:Generator_RowEvArgName="TBLCONSUMERMONEYRowChangeEvent" msprop:Generator_RowClassName="TBLCONSUMERMONEYRow">
+        <xs:element name="TBLCONSUMERMONEY" msprop:Generator_TableClassName="TBLCONSUMERMONEYDataTable" msprop:Generator_TableVarName="tableTBLCONSUMERMONEY" msprop:Generator_RowChangedName="TBLCONSUMERMONEYRowChanged" msprop:Generator_TablePropName="TBLCONSUMERMONEY" msprop:Generator_RowDeletingName="TBLCONSUMERMONEYRowDeleting" msprop:Generator_RowChangingName="TBLCONSUMERMONEYRowChanging" msprop:Generator_RowEvHandlerName="TBLCONSUMERMONEYRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLCONSUMERMONEYRowDeleted" msprop:Generator_RowClassName="TBLCONSUMERMONEYRow" msprop:Generator_UserTableName="TBLCONSUMERMONEY" msprop:Generator_RowEvArgName="TBLCONSUMERMONEYRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CONSUMERNUMBER" msprop:Generator_ColumnVarNameInTable="columnCONSUMERNUMBER" msprop:Generator_ColumnPropNameInRow="CONSUMERNUMBER" msprop:Generator_ColumnPropNameInTable="CONSUMERNUMBERColumn" msprop:Generator_UserColumnName="CONSUMERNUMBER" type="xs:int" minOccurs="0" />
@@ -264,7 +301,7 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="DELETECONSUMER" msprop:Generator_TableClassName="DELETECONSUMERDataTable" msprop:Generator_TableVarName="tableDELETECONSUMER" msprop:Generator_TablePropName="DELETECONSUMER" msprop:Generator_RowDeletingName="DELETECONSUMERRowDeleting" msprop:Generator_RowChangingName="DELETECONSUMERRowChanging" msprop:Generator_RowEvHandlerName="DELETECONSUMERRowChangeEventHandler" msprop:Generator_RowDeletedName="DELETECONSUMERRowDeleted" msprop:Generator_UserTableName="DELETECONSUMER" msprop:Generator_RowChangedName="DELETECONSUMERRowChanged" msprop:Generator_RowEvArgName="DELETECONSUMERRowChangeEvent" msprop:Generator_RowClassName="DELETECONSUMERRow">
+        <xs:element name="DELETECONSUMER" msprop:Generator_TableClassName="DELETECONSUMERDataTable" msprop:Generator_TableVarName="tableDELETECONSUMER" msprop:Generator_RowChangedName="DELETECONSUMERRowChanged" msprop:Generator_TablePropName="DELETECONSUMER" msprop:Generator_RowDeletingName="DELETECONSUMERRowDeleting" msprop:Generator_RowChangingName="DELETECONSUMERRowChanging" msprop:Generator_RowEvHandlerName="DELETECONSUMERRowChangeEventHandler" msprop:Generator_RowDeletedName="DELETECONSUMERRowDeleted" msprop:Generator_RowClassName="DELETECONSUMERRow" msprop:Generator_UserTableName="DELETECONSUMER" msprop:Generator_RowEvArgName="DELETECONSUMERRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CONSUMERNUMBER" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCONSUMERNUMBER" msprop:Generator_ColumnPropNameInRow="CONSUMERNUMBER" msprop:Generator_ColumnPropNameInTable="CONSUMERNUMBERColumn" msprop:Generator_UserColumnName="CONSUMERNUMBER" type="xs:int" />
@@ -308,7 +345,7 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="TBLCONSUMER" msprop:Generator_TableClassName="TBLCONSUMERDataTable" msprop:Generator_TableVarName="tableTBLCONSUMER" msprop:Generator_TablePropName="TBLCONSUMER" msprop:Generator_RowDeletingName="TBLCONSUMERRowDeleting" msprop:Generator_RowChangingName="TBLCONSUMERRowChanging" msprop:Generator_RowEvHandlerName="TBLCONSUMERRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLCONSUMERRowDeleted" msprop:Generator_UserTableName="TBLCONSUMER" msprop:Generator_RowChangedName="TBLCONSUMERRowChanged" msprop:Generator_RowEvArgName="TBLCONSUMERRowChangeEvent" msprop:Generator_RowClassName="TBLCONSUMERRow">
+        <xs:element name="TBLCONSUMER" msprop:Generator_TableClassName="TBLCONSUMERDataTable" msprop:Generator_TableVarName="tableTBLCONSUMER" msprop:Generator_RowChangedName="TBLCONSUMERRowChanged" msprop:Generator_TablePropName="TBLCONSUMER" msprop:Generator_RowDeletingName="TBLCONSUMERRowDeleting" msprop:Generator_RowChangingName="TBLCONSUMERRowChanging" msprop:Generator_RowEvHandlerName="TBLCONSUMERRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLCONSUMERRowDeleted" msprop:Generator_RowClassName="TBLCONSUMERRow" msprop:Generator_UserTableName="TBLCONSUMER" msprop:Generator_RowEvArgName="TBLCONSUMERRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CONSUMERNUMBER" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCONSUMERNUMBER" msprop:Generator_ColumnPropNameInRow="CONSUMERNUMBER" msprop:Generator_ColumnPropNameInTable="CONSUMERNUMBERColumn" msprop:Generator_UserColumnName="CONSUMERNUMBER" type="xs:int" />
@@ -341,6 +378,61 @@ SELECT CONSUMERNUMBER, SIFRE, ISIM, SOYISIM, TELEFON, ADRES FROM TBLCONSUMER WHE
                 </xs:simpleType>
               </xs:element>
               <xs:element name="ADRES" msprop:Generator_ColumnVarNameInTable="columnADRES" msprop:Generator_ColumnPropNameInRow="ADRES" msprop:Generator_ColumnPropNameInTable="ADRESColumn" msprop:Generator_UserColumnName="ADRES" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TBLCONSUMERCREDI" msprop:Generator_TableClassName="TBLCONSUMERCREDIDataTable" msprop:Generator_TableVarName="tableTBLCONSUMERCREDI" msprop:Generator_TablePropName="TBLCONSUMERCREDI" msprop:Generator_RowDeletingName="TBLCONSUMERCREDIRowDeleting" msprop:Generator_RowChangingName="TBLCONSUMERCREDIRowChanging" msprop:Generator_RowEvHandlerName="TBLCONSUMERCREDIRowChangeEventHandler" msprop:Generator_RowDeletedName="TBLCONSUMERCREDIRowDeleted" msprop:Generator_UserTableName="TBLCONSUMERCREDI" msprop:Generator_RowChangedName="TBLCONSUMERCREDIRowChanged" msprop:Generator_RowEvArgName="TBLCONSUMERCREDIRowChangeEvent" msprop:Generator_RowClassName="TBLCONSUMERCREDIRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CONSUMERNUMBER" msprop:Generator_ColumnVarNameInTable="columnCONSUMERNUMBER" msprop:Generator_ColumnPropNameInRow="CONSUMERNUMBER" msprop:Generator_ColumnPropNameInTable="CONSUMERNUMBERColumn" msprop:Generator_UserColumnName="CONSUMERNUMBER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VADE" msprop:Generator_ColumnVarNameInTable="columnVADE" msprop:Generator_ColumnPropNameInRow="VADE" msprop:Generator_ColumnPropNameInTable="VADEColumn" msprop:Generator_UserColumnName="VADE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BORC" msprop:Generator_ColumnVarNameInTable="columnBORC" msprop:Generator_ColumnPropNameInRow="BORC" msprop:Generator_ColumnPropNameInTable="BORCColumn" msprop:Generator_UserColumnName="BORC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VADEKALAN" msprop:Generator_ColumnVarNameInTable="columnVADEKALAN" msprop:Generator_ColumnPropNameInRow="VADEKALAN" msprop:Generator_ColumnPropNameInTable="VADEKALANColumn" msprop:Generator_UserColumnName="VADEKALAN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BORCKALAN" msprop:Generator_ColumnVarNameInTable="columnBORCKALAN" msprop:Generator_ColumnPropNameInRow="BORCKALAN" msprop:Generator_ColumnPropNameInTable="BORCKALANColumn" msprop:Generator_UserColumnName="BORCKALAN" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AYLIK_BORC" msprop:Generator_ColumnVarNameInTable="columnAYLIK_BORC" msprop:Generator_ColumnPropNameInRow="AYLIK_BORC" msprop:Generator_ColumnPropNameInTable="AYLIK_BORCColumn" msprop:Generator_UserColumnName="AYLIK_BORC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AYLIK_FAIZ" msprop:Generator_ColumnVarNameInTable="columnAYLIK_FAIZ" msprop:Generator_ColumnPropNameInRow="AYLIK_FAIZ" msprop:Generator_ColumnPropNameInTable="AYLIK_FAIZColumn" msprop:Generator_UserColumnName="AYLIK_FAIZ" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
